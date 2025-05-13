@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria Las Tortas</title>
+    <link rel="stylesheet" href="./css/cafeteriaa.css">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="#Menu"> Menu</a></li>
+                <li><a href="#Promos"> Promociones</a></li>
+                <li><a href="#Nosotros"> Sobre nosotros</a></li>
+                <li><a href="#Mapa"> Donde encontrarnos</a></li>
+                <li><a href="#socio">¿como hacerme socio?</a></li>
+            </ul>
+        </nav>
+    
+        <div class="logo">
+          <img src="./img/logo.jpg"> 
+        </div>
+
+        <h2> Bienvenidos a nuestra Cafeteria</h2>
+    </header>
+
+    <section id="Menu">
+        <h1> nuestro menu</h1>
+        <p>Explora una selección especial de bebidas y comidas.</p>
+        <div class="nuestro-menu">
+            <div class="menu-comidas">
+                <a href="./comidas.html" target="_self" class="comidas">
+                    <div class="diseño-comida">
+                        <h3>Comidas</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="menu-bebidas">
+                <a href="./bebidas.html" target="_self" class="bebidas">
+                    <div class="diseño-bebida">
+                        <h3>Bebidas</h3>
+                    </div>
+                </a>
+            </div>
+        </div>  
+    </section>
+
+
+    <section id="Promos">
+        <h1>Promociones del dia</h1>
+        <p>no te pierdas nuestras promos!!</p>
+            <div class="promociones-container">
+                <div class="promociones">
+                    <img src="./img/promo1.jpg" alt="Promo 1">
+                    <div class="overlay">
+                        <p class="nombre">2 brownies y 2 cafés a elección</p>
+                        <p class="precio">$4300</p>
+                    </div>
+                </div>
+                <div class="promociones">
+                    <img src="./img/promo2.jpg" alt="Promo 2">
+                    <div class="overlay">
+                        <p class="nombre">3 tostadas y café a elección</p>
+                        <p class="precio">$4000</p>
+                    </div>
+                </div>
+                <div class="promociones">
+                    <img src="./comidas/desayuno3.jpg" alt="Promo 3">
+                    <div class="overlay">
+                        <p class="nombre">2 desayunos y 2 licuados</p>
+                        <p class="precio">$4400</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+ 
+    <section id="Nosotros">
+        <h1>Sobre Nosotros</h1>
+        <p>Empezamos con este emprendimiento hace 5 años y hoy en dia tenemos nuestro <br> 
+            primer local. contamos con una gran variedad de comidas y bebidas <br> </p>
+    </section>
+
+    <section id="Mapa">
+        <h1>Donde encontrarnos</h1>
+        <p>Visítanos en nuestro local.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.6210485903325!2d-58.389533924254856!3d-34.71473687291484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccd393d950e51%3A0x4b28fad07877b4f0!2sEEST%20N%C2%B0%205%20%22John%20F.%20Kennedy%22!5e0!3m2!1ses!2sar!4v1731626567648!5m2!1ses!2sar" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section id="socio">
+        <h1> ¿como hacerme socio? y por que?</h1>
+        <p> haciendote socio de nuestra cafeteria podes recibir descuentos en cualquier compra <br>
+            y a los seis meses te regalamos el combo que mas te guste.</p>
+            <div class="login">
+                <form action="./login/login.php" method="POST">
+                    <label for="nombre_usuario">Nombre de usuario</label>
+                    <input type="text" id="nombre_usuario" name="nombre_usuario" required>
+        
+                    <label for="contraseña">Contraseña</label>
+                    <input type="password" id="contraseña" name="contraseña" required>
+        
+                    <button type="submit">Iniciar sesión</button>
+                </form>
+            </div>
+    </section>
+
+    <footer>
+        <h2> Las Tortas</h2>
+        <p>Visítanos en  <br>Ramón Cabrero 1751,Remedios de Escalada, Provincia de Buenos Aires <br> Tel: +54 1234-5678</p>
+    </footer>
+</body>
+</html>

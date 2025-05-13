@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color:rgb(209, 173,107) ;
+    overflow-x: hidden;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(117, 91,41) ;
+    color: #000000;
+}
+
+btn{
+    display: flex;
+    position: absolute;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+
+}
+h2 {
+    margin: 4px;
+    text-align: center;
+    background-color:rgb(248, 198, 233) ;
+    
+}
+
+.bebida {
+    margin: 20px 0;
+
+}
+
+.menu-cont {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+.boton {
+    background-color: #541c1cef;
+    color: white;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 10px 10px 10px;
+    transition: background-color 0.3s;
+}
+
+.scroll-button:hover {
+    background-color: #752525;
+}
+
+.menu {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    
+}
+
+.menu-item {
+    position: relative;
+    flex: 0 0 auto;
+    min-width: 150px;
+    height: 200px;
+    margin: 30px;
+    overflow: hidden;
+    border-radius: 35px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0);
+    
+
+}
+
+.menu-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; 
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(102, 56, 56, 0.377);
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.6s;
+}
+
+.menu-item:hover .overlay {
+    opacity: 0.8;
+}
+
+.nombre {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.precio {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 608px) {
+    header {
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    .menu-cont {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boton {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .menu-item {
+        min-width: 120px;
+        height: 150px;
+        margin: 15px;
+    }
+
+    .menu-item img {
+        width: 120px;
+        height: 150px;
+    }
+
+    .overlay {
+        width: 120px;
+        height: 150px;
+    }
+
+    .nombre {
+        font-size: 14px;
+    }
+
+    .precio {
+        font-size: 12px;
+    }
+}
+
+/* Para tabletas */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .menu-item {
+        min-width: 140px;
+        height: 180px;
+        margin: 20px;
+    }
+
+    .menu-item img {
+        width: 140px;
+        height: 180px;
+    }
+
+    .overlay {
+        width: 140px;
+        height: 180px;
+    }
+
+    .nombre {
+        font-size: 16px;
+    }
+
+    .precio {
+        font-size: 14px;
+    }
+}
