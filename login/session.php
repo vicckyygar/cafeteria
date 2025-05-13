@@ -71,7 +71,7 @@ if (!isset($_SESSION['nombre_usuario'])) {
         <div class="overlay">
             <p class="nombre">2 cafés y 6 medialunas</p>
             <p class="precio">$3000</p>
-            <img src="../bebidas/cafegatito.jpg" width="200" alt="Café y medialunas">
+            <img src="cafegatito.jpg" width="200" alt="Café y medialunas">
         </div>
     </div>
 
@@ -79,7 +79,7 @@ if (!isset($_SESSION['nombre_usuario'])) {
         <div class="overlay">
             <p class="nombre">3 exprimidos y 3 tostados de jamón y queso</p>
             <p class="precio">$3250</p>
-            <img src="../bebidas/jugopomelo.jpg" width="200" alt="Jugo y tostados">
+            <img src="jugopomelo.jpg" width="200" alt="Jugo y tostados">
         </div>
     </div>
 
@@ -87,7 +87,7 @@ if (!isset($_SESSION['nombre_usuario'])) {
          <div class="overlay">
               <p class="nombre">2 alfajores y 2 café mocca</p>
                <p class="precio">$3400</p>
-             <img src="../comidas/alfajores.jpg" width="200" alt="Alfajores y café mocca">
+             <img src="alfajores.jpg" width="200" alt="Alfajores y café mocca">
         </div>
     </div>
 </section>
