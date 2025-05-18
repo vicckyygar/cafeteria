@@ -1,114 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafeteria Las Tortas</title>
-    <link rel="stylesheet" href="cafeteriaa.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafeteria Las Tortas</title>
+   <link rel="stylesheet" href="cafeteriaa.css">
 </head>
 <body>
-    <header>
-        <nav class="menu">
-            <ul>
-                <li><a href="#Menu"> Menu</a></li>
-                <li><a href="#Promos"> Promociones</a></li>
-                <li><a href="#Nosotros"> Sobre nosotros</a></li>
-                <li><a href="#Mapa"> Donde encontrarnos</a></li>
-                <li><a href="#socio">¿como hacerme socio?</a></li>
-            </ul>
-        </nav>
-    
-        <div class="logo">
-          <img src="logo.jpg"> 
-        </div>
+  <header>
+    <img
+      src="logo.jpg" alt="Logo"class="logo"/>
+       <h1>Cafetería Las Tortas</h1>
 
-        <h2> Bienvenidos a nuestra Cafeteria</h2>
-    </header>
+    <button
+      id="btn-hamburguesa"
+      aria-label="Abrir menú de navegación"
+      aria-expanded="false"
+      aria-controls="menu-lista">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
-    <section id="Menu">
-        <h1> nuestro menu</h1>
-        <p>Explora una selección especial de bebidas y comidas.</p>
-        <div class="nuestro-menu">
+    <nav class="menu" aria-label="Menú principal">
+      <ul id="menu-lista" role="menubar">
+        <li role="none"><a href="#menu" role="menuitem" tabindex="0">Menú</a></li>
+        <li role="none"><a href="#promociones" role="menuitem" tabindex="0">Promociones</a></li>
+        <li role="none"><a href="#sobrenosotros" role="menuitem" tabindex="0">Sobre Nosotros</a></li>
+        <li role="none"><a href="#mapa" role="menuitem" tabindex="0">Dónde encontrarnos</a></li>
+        <li role="none"><a href="#socio" role="menuitem" tabindex="0">¿Cómo hacerme socio?</a></li>
+        <li role="none"><a href="#login" role="menuitem" tabindex="0">Iniciar Sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="menu" tabindex="0" aria-label="Nuestro menú">
+        <h2>Menú</h2>
+          <p>Explora una selección especial de bebidas y comidas.</p>
+          <div class="nuestro-menu">
             <div class="menu-comidas">
-                <a href="comidas.html" target="_self" class="comidas">
-                    <div class="diseño-comida">
-                        <h3>Comidas</h3>
-                    </div>
-                </a>
-            </div>
+              <a href="comidas.html" class="comidas" aria-label="Ir a la sección de comidas">
+               <h3>Comidas</h3>
+             </a>
+           </div>
             <div class="menu-bebidas">
-                <a href="bebidas.html" target="_self" class="bebidas">
-                    <div class="diseño-bebida">
-                        <h3>Bebidas</h3>
-                    </div>
-                </a>
-            </div>
-        </div>  
+              <a href="bebidas.html" class="bebidas" aria-label="Ir a la sección de bebidas">
+                <h3>Bebidas</h3>
+             </a>
+           </div>
+         </div>  
     </section>
 
+      <section id="promociones" tabindex="0" aria-label="Promociones especiales">
+        <h2>Promociones</h2>
+         <div class="promociones-container">
+           <figure class="promociones hidden" tabindex="0">
+              <img src="promo1.jpg" alt="2 brownies y 2 cafés a elección">
+                <figcaption class="overlay">
+                  <p class="nombre">2 brownies y 2 cafés a elección</p>
+                  <p class="precio">$4300</p>
+               </figcaption>
+            </figure>
+            <figure class="promociones hidden" tabindex="0">
+                <img src="promo2.jpg" alt="3 tostadas y café a elección">
+                 <figcaption class="overlay">
+                   <p class="nombre">3 tostadas y café a elección</p>
+                   <p class="precio">$4000</p>
+                 </figcaption>
+              </figure>
+            <figure class="promociones hidden" tabindex="0">
+                 <img src="desayuno3.jpg" alt="2 desayunos y 2 licuados">
+                   <figcaption class="overlay">
+                     <p class="nombre">2 desayunos y 2 licuados</p>
+                     <p class="precio">$4400</p>
+                   </figcaption>
+            </figure>
+          </div>
+      </section>
 
-    <section id="Promos">
-        <h1>Promociones del dia</h1>
-        <p>no te pierdas nuestras promos!!</p>
-            <div class="promociones-container">
-                <div class="promociones">
-                    <img src="promo1.jpg" alt="Promo 1">
-                    <div class="overlay">
-                        <p class="nombre">2 brownies y 2 cafés a elección</p>
-                        <p class="precio">$4300</p>
-                    </div>
-                </div>
-                <div class="promociones">
-                    <img src="promo2.jpg" alt="Promo 2">
-                    <div class="overlay">
-                        <p class="nombre">3 tostadas y café a elección</p>
-                        <p class="precio">$4000</p>
-                    </div>
-                </div>
-                <div class="promociones">
-                    <img src="desayuno3.jpg" alt="Promo 3">
-                    <div class="overlay">
-                        <p class="nombre">2 desayunos y 2 licuados</p>
-                        <p class="precio">$4400</p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-    </section>
- 
-    <section id="Nosotros">
-        <h1>Sobre Nosotros</h1>
-        <p>Empezamos con este emprendimiento hace 5 años y hoy en dia tenemos nuestro <br> 
-            primer local. contamos con una gran variedad de comidas y bebidas <br> </p>
-    </section>
-
-    <section id="Mapa">
-        <h1>Donde encontrarnos</h1>
-        <p>Visítanos en nuestro local.</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.6210485903325!2d-58.389533924254856!3d-34.71473687291484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccd393d950e51%3A0x4b28fad07877b4f0!2sEEST%20N%C2%B0%205%20%22John%20F.%20Kennedy%22!5e0!3m2!1ses!2sar!4v1731626567648!5m2!1ses!2sar" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <section id="sobrenosotros" tabindex="0" aria-label="Sobre nosotros">
+      <h2>Sobre Nosotros</h2>
+      <p>
+        Empezamos este emprendimiento hace 5 años y hoy en día contamos con nuestro primer local.
+        Ofrecemos una gran variedad de comidas y bebidas para todos los gustos.
+      </p>
     </section>
 
-    <section id="socio">
-        <h1> ¿como hacerme socio? y por que?</h1>
-        <p> haciendote socio de nuestra cafeteria podes recibir descuentos en cualquier compra <br>
-            y a los seis meses te regalamos el combo que mas te guste.</p>
-            <div class="login">
-                <form action="/login/login.php" method="POST">
-                    <label for="nombre_usuario">Nombre de usuario</label>
-                    <input type="text" id="nombre_usuario" name="nombre_usuario" required>
-        
-                    <label for="contraseña">Contraseña</label>
-                    <input type="password" id="contraseña" name="contraseña" required>
-        
-                    <button type="submit">Iniciar sesión</button>
-                </form>
-            </div>
+    <section id="mapa" tabindex="0" aria-label="Mapa de ubicación">
+      <h2>Ubicación</h2>
+      <iframe
+        title="Mapa ubicación Confitería Dulce Cielo y Cafetería Las Tortas"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3379.547329582081!2d-64.19169568486052!3d-31.42008398145985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432990f84c9b22f%3A0x8c52c7ec3061d4ca!2sConfiter%C3%ADa%20Dulce%20Cielo!5e0!3m2!1ses!2sar!4v1684216660746!5m2!1ses!2sar"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
     </section>
 
-    <footer>
-        <h2> Las Tortas</h2>
-        <p>Visítanos en  <br>Ramón Cabrero 1751,Remedios de Escalada, Provincia de Buenos Aires <br> Tel: +54 1234-5678</p>
-    </footer>
+    <section id="socio" tabindex="0" aria-label="Información para socios">
+      <h2>¿Cómo hacerme socio? ¿Y por qué?</h2>
+      <p>
+        Haciéndote socio de nuestra cafetería podés recibir descuentos en cualquier compra,
+        y a los seis meses te regalamos el combo que más te guste.
+      </p>
+    </section>
+
+    <section id="login" tabindex="0" aria-label="Ingreso de usuario">
+       <h2>Iniciar Sesión</h2>
+      <div class="login">
+         <form action="./login/login.php" method="POST" aria-labelledby="login">
+           <label for="nombre_usuario">Nombre de usuario</label>
+           <input type="text" id="nombre_usuario" name="nombre_usuario" required autocomplete="username">
+
+           <label for="contraseña">Contraseña</label>
+           <input type="password" id="contraseña" name="contraseña" required autocomplete="current-password">
+
+           <button type="submit">Iniciar sesión</button>
+         </form>
+       </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Cafetería Las Tortas — Todos los derechos reservados</p>
+  </footer>
+
+  <script src="cafeteria.js"></script>
+  
 </body>
 </html>
