@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
-    background-color:rgb(209, 173,107) ;
+    background-color: rgb(209, 173, 107);
     overflow-x: hidden;
     background-position: center;
     background-attachment: fixed;
@@ -10,119 +12,126 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    background-color: rgb(117, 91,41) ;
-    color: #000000;
+    background-color: rgb(117, 91, 41);
+    color: white;
+    font-size: 1.8rem;
 }
 
-btn{
+btn {
     display: flex;
     position: absolute;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-
 }
+
 h2 {
     margin: 4px;
     text-align: center;
-    background-color:rgb(248, 198, 233) ;
-    
+    background-color: rgb(248, 198, 233);
+    font-size: 1.6rem;
 }
 
 .bebida {
     margin: 20px 0;
-
 }
 
 .menu-cont {
     display: flex;
     align-items: center;
     overflow: hidden;
-    
 }
 
 .boton {
     background-color: #541c1cef;
     color: white;
-    font-size: 15px;
+    font-size: 17px;
     border: none;
     cursor: pointer;
-    padding: 10px 10px 10px 10px;
-    transition: background-color 0.3s;
+    padding: 12px 20px;
+    transition: background-color 0.3s, transform 0.2s;
+    border-radius: 10px;
 }
 
-.scroll-button:hover {
+.boton:hover {
     background-color: #752525;
+    transform: scale(1.05);
 }
 
 .menu {
     display: flex;
     overflow: hidden;
     width: 100%;
-    
+    flex-wrap: nowrap;
 }
 
 .menu-item {
     position: relative;
     flex: 0 0 auto;
-    min-width: 150px;
-    height: 200px;
+    min-width: 180px;
+    height: 240px;
     margin: 30px;
     overflow: hidden;
     border-radius: 35px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0);
-    
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.menu-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
 .menu-item img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover; 
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 35px;
 }
 
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
-    width: 200px;
-    height: 200px;
-    background-color: rgba(102, 56, 56, 0.377);
-    color: rgb(255, 255, 255);
+    width: 240px;
+    height: 240px;
+    background-color: rgba(102, 56, 56, 0.5);
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     opacity: 0;
-    transition: opacity 0.6s;
+    transition: opacity 0.6s, transform 0.3s;
+    border-radius: 35px;
 }
 
 .menu-item:hover .overlay {
-    opacity: 0.8;
+    opacity: 0.9;
+    transform: scale(1.02);
 }
 
 .nombre {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     margin: 0;
 }
 
 .precio {
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 5px;
 }
 
-
-/* Para pantallas pequeñas (móviles) */
+/* 📱 Móviles */
 @media (max-width: 608px) {
     header {
-        font-size: 18px;
+        font-size: 1.6rem;
         padding: 20px;
     }
 
     h2 {
-        font-size: 16px;
-        padding: 20px;
+        font-size: 1.4rem;
+        padding: 16px;
     }
 
     .menu-cont {
@@ -131,58 +140,55 @@ h2 {
     }
 
     .boton {
-        font-size: 12px;
-        padding: 8px;
+        font-size: 16px;
+        padding: 10px 14px;
     }
 
     .menu-item {
-        min-width: 120px;
-        height: 150px;
-        margin: 15px;
+        width: 90%;
+        height: auto;
+        margin: 15px 0;
     }
 
-    .menu-item img {
-        width: 120px;
-        height: 150px;
-    }
-
+    .menu-item img,
     .overlay {
-        width: 120px;
-        height: 150px;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
     }
 
     .nombre {
-        font-size: 14px;
+        font-size: 20px;
     }
 
     .precio {
-        font-size: 12px;
+        font-size: 18px;
     }
 }
 
-/* Para tabletas */
-@media (min-width: 769px) and (max-width: 1024px) {
+/* 💻 Tabletas */
+@media (min-width: 609px) and (max-width: 1024px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
     .menu-item {
-        min-width: 140px;
-        height: 180px;
+        min-width: 200px;
+        height: 220px;
         margin: 20px;
     }
 
-    .menu-item img {
-        width: 140px;
-        height: 180px;
-    }
-
+    .menu-item img,
     .overlay {
-        width: 140px;
-        height: 180px;
+        width: 220px;
+        height: 220px;
     }
 
     .nombre {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .precio {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
